@@ -1,0 +1,7 @@
+{% ckan_extends %}
+
+{% if header_account_notlogged is defined %}
+    {% block header_account_notlogged %}
+    <li>{% link_for _('Log in'), controller='user', action='login' %}</li>
+    {% endblock %}
+{% endif %}
